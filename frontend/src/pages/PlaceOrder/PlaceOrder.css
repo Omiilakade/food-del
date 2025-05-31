@@ -1,0 +1,141 @@
+.place-order {
+    width: 100vw;  /* Full screen width */
+    min-height: 100vh;  /* Full screen height */
+    display: flex;
+    align-items: start;  /* Align content to the top */
+    justify-content: flex-start;  /* Moves content to the left */
+    padding-left: 25%;  /* Adjust spacing from the left */
+    background-color: white;
+}
+
+
+@media (max-width: 900px) {
+    .place-order {
+        justify-content: center;  /* Center align on smaller screens */
+        padding-left: 0;
+    }
+
+    .place-order-container {
+        width: 90%;
+    }
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.multi-field {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.multi-field input {
+    width: 48%;
+}
+
+.place-order-container input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.cart-total, .payment {
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    text-align: left;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid tomato;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 15px;
+    margin-top: 15px; /* Adds space between payment boxes */
+}
+
+
+.payment-option:hover {
+    background: #ffe7de;
+}
+
+.place-order-submit {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    border: none;
+    background-color: tomato;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+.place-order-submit:hover {
+    background-color: darkred;
+}
+.place-order {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    gap: 50px;
+}
+
+/* Customer Info on Left */
+.place-order-left {
+    width: 50%;
+}
+
+/* Cart Total & Payment on Right */
+.place-order-right {
+    width: 50%;
+}
+
+/* Makes Payment Section and Cart Totals Look Neat */
+.payment,
+.cart-total {
+    margin-bottom: 20px;
+}
+
+/* Space Between Payment Options */
+.payment-option {
+    margin-bottom: 15px;
+}
+
+/* Full-width for Small Screens */
+@media (max-width: 768px) {
+    .place-order {
+        flex-direction: column;
+        align-items: center;
+    }
+    .place-order-left, .place-order-right {
+        width: 100%;
+    }
+}
+.table-info-message {
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+}
+
+

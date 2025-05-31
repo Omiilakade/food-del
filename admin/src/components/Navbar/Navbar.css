@@ -1,0 +1,31 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 1%;
+  }
+  
+  .navbar .logo {
+    width: max(11%, 40px);
+  }
+  
+  .navbar .profile {
+    width: 40px;
+  }
+  
+  .logo-container {
+    display: flex;
+    flex-direction: column; /* Stack the logo and text vertically */
+    justify-content: left;
+    align-items: left;
+    width: 100%;
+  }
+  
+  .admin-text {
+    font-size: 14px; /* Adjust size of Admin Panel text */
+    margin-right: 10px;
+    font-weight: bold;
+    
+}
+  
+
